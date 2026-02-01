@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmer sa présence – Océane & Vimanga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="logo">Océane & Vimanga</div>
+  <nav>
+    <a href="index.html">Mariage</a>
+    <a href="presence.html">Confirmer sa présence</a>
+    <a href="cadeaux.html">Cadeaux</a>
+    <a href="#">Nous contacter</a>
+    <a href="#" class="lang">FR / EN</a>
+  </nav>
+</header>
+
+<main class="presence-layout">
+
+  <!-- IMAGE À GAUCHE -->
+  <div class="presence-image">
+    <img src="planning.jpg" alt="Programme du mariage">
+  </div>
+
+  <!-- FORMULAIRE À DROITE -->
+  <div class="presence-form">
+
+    <h1>Tu seras là ?</h1>
+
+    <p>
+      Pour confirmer ta présence à notre mariage,  
+      merci de remplir ce formulaire 🤍
+    </p>
+
+    <form
+      name="rsvp"
+      method="POST"
+      data-netlify="true"
+      action="/merci.html"
+    >
+
+      <input type="hidden" name="form-name" value="rsvp">
+
+      <input type="text" name="prenom" placeholder="Prénom" required>
+      <input type="text" name="nom" placeholder="Nom" required>
+
+      <input
+        type="number"
+        name="nombre_personnes"
+        placeholder="Nombre de personnes"
+        min="1"
+        step="1"
+        required
+      >
+
+      <select name="evenement" required>
+        <option value="">Je serai présent(e) à partir de…</option>
+        <option>Mariage civil – 13h30 – Mairie de Rouen</option>
+        <option>Garden party – 15h30 – Château de Hautot-sur-Seine</option>
+        <option>Échange des vœux – 17h30 – Château de Hautot-sur-Seine</option>
+        <option>Dîner – 20h00</option>
+        <option>Je ne peux malheureusement pas venir</option>
+      </select>
+
+      <textarea name="message" placeholder="Message (optionnel)"></textarea>
+
+      <button type="submit">Confirmer ma présence</button>
+
+    </form>
+
+  </div>
+
+</main>
+
+</body>
+</html>
+
