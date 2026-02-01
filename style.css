@@ -72,15 +72,27 @@ nav a:hover {
   display: block;
   margin: 0 auto;
 }
+.bandeau-haut {
+  margin-bottom: 40px;
+}
+
+.bandeau-bas {
+  margin-top: 40px;
+}
+
+
 
 /* =====================================================
    PAGE INDEX — INVITATION
 ===================================================== */
 
 .invitation-new {
+  max-width: 900px;   /* 🔑 clé du problème */
+  margin: 0 auto;
   text-align: center;
-  padding: 80px 20px 120px;
+  padding: 60px 20px 80px;
 }
+
 
 .invitation-new .intro {
   font-style: italic;
@@ -90,7 +102,7 @@ nav a:hover {
 .invitation-new .date {
   font-size: 26px;
   letter-spacing: 2px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /* Événements */
@@ -130,13 +142,13 @@ nav a:hover {
    RESPONSIVE
 ===================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .events {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .invitation-new {
-    padding: 60px 15px 80px;
+    padding: 40px 15px 60px;
   }
 }
 
@@ -159,6 +171,7 @@ nav a:hover {
     font-size: 11px;
   }
 }
+
 
 
 
