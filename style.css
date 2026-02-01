@@ -151,86 +151,91 @@ button:hover {
 
 }
 
-/* ===== INVITATION ===== */
+/* ===== NOUVELLE PAGE INVITATION ===== */
 
-.invitation {
-  padding: 80px 20px;
+.invitation-new {
+  position: relative;
+  background: #f5f0ea;
+  padding: 80px 20px 120px;
+  text-align: center;
+  overflow: hidden;
 }
 
-.invitation-container {
+.intro {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.date {
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+/* événements */
+.events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  gap: 80px;
-  align-items: flex-start;
+  margin: 0 auto 60px;
+  gap: 40px;
 }
 
-/* Colonne gauche */
-.invitation-left {
-  width: 300px;
+.event h3 {
+  color: #c58b9f;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.event p {
   font-size: 14px;
   line-height: 1.8;
 }
 
-.invitation-left h4 {
-  color: #c58b9f;
-  letter-spacing: 2px;
-  font-size: 13px;
-  margin-bottom: 6px;
-}
-
-/* Centre */
-.invitation-center {
-  flex: 1;
-  text-align: center;
-}
-
-.invitation-center .intro {
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-.names {
-  font-size: 36px;
-  letter-spacing: 4px;
-  margin: 20px 0;
-}
-
-.names span {
-  color: #c58b9f;
-  font-weight: normal;
-}
-
-.date {
-  font-size: 18px;
-  letter-spacing: 2px;
-  margin: 25px 0 40px;
-}
-
-.rsvp-link {
+/* confirmation */
+.rsvp {
   display: inline-block;
   color: #c58b9f;
-  text-decoration: none;
   font-style: italic;
+  text-decoration: none;
+  margin-bottom: 60px;
 }
 
-.rsvp-link:hover {
+.rsvp:hover {
   text-decoration: underline;
 }
 
+/* dress code */
+.dress-title {
+  margin-bottom: 30px;
+}
+
+.dress-img {
+  max-width: 320px;
+  width: 100%;
+}
+
+/* fleurs */
+.flower {
+  position: absolute;
+  width: 220px;
+  pointer-events: none;
+}
+
+.flower.top.left { top: 0; left: 0; }
+.flower.top.right { top: 0; right: 0; }
+.flower.bottom.left { bottom: 0; left: 0; }
+.flower.bottom.right { bottom: 0; right: 0; }
+
 /* Mobile */
 @media (max-width: 900px) {
-  .invitation-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+  .events {
+    grid-template-columns: 1fr;
   }
 
-  .invitation-left {
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+  .flower {
+    width: 150px;
   }
 }
+
 
 
