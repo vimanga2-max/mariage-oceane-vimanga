@@ -126,6 +126,40 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .invitation-new {
+    padding: 60px 15px 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events {
+    grid-template-columns: 1fr;
+  }
+
+  .invitation-new .date {
+    font-size: 22px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+    font-size: 11px;
+  }
+}
+
 
 
 
