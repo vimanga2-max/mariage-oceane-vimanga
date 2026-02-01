@@ -1,4 +1,3 @@
-/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: "Georgia", serif;
@@ -6,7 +5,7 @@ body {
   color: #2b2b2b;
 }
 
-/* ===== BARRE DU HAUT ===== */
+/* Barre du haut */
 .topbar {
   background-color: #ffffff;
   text-align: center;
@@ -20,6 +19,7 @@ body {
   margin-bottom: 15px;
 }
 
+/* Menu */
 nav a {
   text-decoration: none;
   color: #2b2b2b;
@@ -37,24 +37,128 @@ nav a:hover {
   font-style: italic;
 }
 
-/* ===== BANDEAUX ===== */
-.bandeau {
-  width: 100%;
-  overflow: hidden;
-}
+/* ===== PAGE PRÉSENCE ===== */
 
-.bandeau img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ===== PAGE INVITATION ===== */
-.invitation-new {
+.presence-layout {
+  display: flex;
+  align-items: flex-start;
   max-width: 1100px;
+  margin: 60px auto;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+/* Image côté */
+.presence-image {
+  flex: 1;
+  text-align: center;
+}
+
+.presence-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formulaire côté */
+.presence-form {
+  flex: 1;
+  text-align: left;
+}
+
+.presence-form h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.presence-form p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #3f4a63;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f384d;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .presence-layout {
+    flex-direction: column;
+    align-items: center;   /* 🔑 CENTRAGE */
+  }
+
+  .presence-image {
+    width: 100%;
+    max-width: 420px;      /* 🔑 limite élégante */
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+
+  .presence-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .presence-form {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* ===== PAGE D'ACCUEIL CENTRÉE ===== */
+.home main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* ===== PAGE CADEAUX CENTRÉE ===== */
+.cadeaux main {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
   margin: 0 auto;
+
+}
+
+/* ===== NOUVELLE PAGE INVITATION ===== */
+
+.invitation-new {
+  position: relative;
+  background: #f5f0ea;
   padding: 80px 20px 120px;
   text-align: center;
+  overflow: hidden;
 }
 
 .intro {
@@ -63,24 +167,23 @@ nav a:hover {
 }
 
 .date {
-  font-size: 26px;
   letter-spacing: 2px;
   margin-bottom: 60px;
 }
 
-/* ===== ÉVÉNEMENTS ===== */
+/* événements */
 .events {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  max-width: 1100px;
+  margin: 0 auto 60px;
   gap: 40px;
-  margin-bottom: 60px;
 }
 
 .event h3 {
   color: #c58b9f;
   font-size: 14px;
   letter-spacing: 2px;
-  margin-bottom: 10px;
 }
 
 .event p {
@@ -88,64 +191,51 @@ nav a:hover {
   line-height: 1.8;
 }
 
-/* ===== RSVP ===== */
+/* confirmation */
 .rsvp {
   display: inline-block;
-  margin: 40px 0 60px;
   color: #c58b9f;
   font-style: italic;
   text-decoration: none;
+  margin-bottom: 60px;
 }
 
 .rsvp:hover {
   text-decoration: underline;
 }
 
-/* ===== DRESS CODE ===== */
+/* dress code */
 .dress-title {
-  margin-bottom: 20px;
-}
-
-.dress-text {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .dress-img {
   max-width: 320px;
   width: 100%;
-  height: auto;
 }
 
-/* ===== RESPONSIVE ===== */
+/* fleurs */
+.flower {
+  position: absolute;
+  width: 220px;
+  pointer-events: none;
+}
+
+.flower.top.left { top: 0; left: 0; }
+.flower.top.right { top: 0; right: 0; }
+.flower.bottom.left { bottom: 0; left: 0; }
+.flower.bottom.right { bottom: 0; right: 0; }
+
+/* Mobile */
 @media (max-width: 900px) {
-  .events {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
   .events {
     grid-template-columns: 1fr;
   }
 
-  .date {
-    font-size: 22px;
-  }
-
-  .invitation-new {
-    padding: 60px 15px;
+  .flower {
+    width: 150px;
   }
 }
-
-/* ===== CONTENEUR GLOBAL CENTRÉ ===== */
-.page-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-
 
 
 
