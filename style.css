@@ -72,19 +72,7 @@ nav a:hover {
   display: block;
   margin: 0 auto;
 }
-.bandeau-haut {
-  margin-bottom: 20px;
-}
 
-.bandeau-bas {
-  margin-top: 20px;
-}
-
-.bandeau-haut img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 
 
@@ -177,6 +165,7 @@ nav a:hover {
     font-size: 11px;
   }
 }
+
 
 
 
