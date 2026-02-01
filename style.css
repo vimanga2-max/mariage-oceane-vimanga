@@ -19,13 +19,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-.event h3 {
-  font-size: 15px;
-}
-
-.event p {
-  font-size: 15px;
-}
 
 /* =====================================================
    BARRE DU HAUT
@@ -80,11 +73,11 @@ nav a:hover {
   margin: 0 auto;
 }
 .bandeau-haut {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .bandeau-bas {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .bandeau-haut img {
@@ -126,13 +119,13 @@ nav a:hover {
 
 .event h3 {
   color: #c58b9f;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
 .event p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -153,19 +146,19 @@ nav a:hover {
    RESPONSIVE
 ===================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .events {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .invitation-new {
-    padding: 40px 15px 60px;
   }
 }
 
 @media (max-width: 600px) {
   .events {
     grid-template-columns: 1fr;
+  }
+
+  .invitation-new {
+    padding: 30px 15px 50px;
   }
 
   .invitation-new .date {
@@ -182,6 +175,7 @@ nav a:hover {
     font-size: 11px;
   }
 }
+
 
 
 
