@@ -19,6 +19,13 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+.event h3 {
+  font-size: 15px;
+}
+
+.event p {
+  font-size: 15px;
+}
 
 /* =====================================================
    BARRE DU HAUT
@@ -80,6 +87,10 @@ nav a:hover {
   margin-top: 40px;
 }
 
+.bandeau-haut img {
+  max-height: 180px;
+  object-fit: contain;
+}
 
 
 /* =====================================================
@@ -90,7 +101,7 @@ nav a:hover {
   max-width: 900px;   /* 🔑 clé du problème */
   margin: 0 auto;
   text-align: center;
-  padding: 60px 20px 80px;
+  padding: 40px 20px 60px;
 }
 
 
@@ -102,7 +113,7 @@ nav a:hover {
 .invitation-new .date {
   font-size: 26px;
   letter-spacing: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* Événements */
@@ -171,6 +182,7 @@ nav a:hover {
     font-size: 11px;
   }
 }
+
 
 
 
