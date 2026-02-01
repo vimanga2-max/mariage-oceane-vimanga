@@ -120,6 +120,11 @@ nav a:hover {
   color: #c58b
 
 
+/* ===== CONTENEUR GLOBAL CENTRÉ ===== */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 
 
 
