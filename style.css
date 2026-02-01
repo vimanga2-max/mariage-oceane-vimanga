@@ -13,9 +13,9 @@ body {
   color: #2b2b2b;
 }
 
-/* Conteneur central */
+/* Conteneur central réutilisable */
 .page-wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -27,14 +27,14 @@ body {
 .topbar {
   background-color: #ffffff;
   text-align: center;
-  padding: 25px 10px;
+  padding: 22px 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .logo {
   font-size: 22px;
   letter-spacing: 3px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 nav a {
@@ -55,67 +55,62 @@ nav a:hover {
 }
 
 /* =====================================================
-   BANDEAUX (haut / bas)
+   BANDEAUX (HAUT & BAS)
 ===================================================== */
 
 .bandeau {
   width: 100%;
   background-color: #f5f0ea;
-  overflow: hidden;
   text-align: center;
+  overflow: hidden;
 }
 
 .bandeau img {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1100px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-.bandeau-haut img,
-.bandeau-bas img {
-  max-width: 1100px;   /* même largeur que le contenu */
-}
-
-
 
 /* =====================================================
    PAGE INDEX — INVITATION
 ===================================================== */
 
 .invitation-new {
-  max-width: 900px;   /* 🔑 clé du problème */
+  max-width: 900px;
   margin: 0 auto;
-  text-align: center;
   padding: 20px 20px 60px;
+  text-align: center;
 }
-
 
 .invitation-new .intro {
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .invitation-new .date {
   font-size: 26px;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
-/* Événements */
+/* =====================================================
+   ÉVÉNEMENTS
+===================================================== */
+
 .events {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .event h3 {
   color: #c58b9f;
   font-size: 15px;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .event p {
@@ -123,10 +118,13 @@ nav a:hover {
   line-height: 1.8;
 }
 
-/* RSVP */
+/* =====================================================
+   RSVP
+===================================================== */
+
 .rsvp {
   display: inline-block;
-  margin: 40px 0 60px;
+  margin: 30px 0 50px;
   color: #c58b9f;
   font-style: italic;
   text-decoration: none;
@@ -134,6 +132,27 @@ nav a:hover {
 
 .rsvp:hover {
   text-decoration: underline;
+}
+
+/* =====================================================
+   SECTIONS SIMPLES (présence / cadeaux)
+===================================================== */
+
+.simple-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.simple-page h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.simple-page p {
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 /* =====================================================
@@ -169,9 +188,6 @@ nav a:hover {
     font-size: 11px;
   }
 }
-
-
-
 
 
 
