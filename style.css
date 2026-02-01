@@ -84,7 +84,7 @@ nav a:hover {
   max-width: 900px;   /* 🔑 clé du problème */
   margin: 0 auto;
   text-align: center;
-  padding: 40px 20px 60px;
+  padding: 20px 20px 60px;
 }
 
 
@@ -165,6 +165,7 @@ nav a:hover {
     font-size: 11px;
   }
 }
+
 
 
 
