@@ -189,6 +189,21 @@ nav a:hover {
   }
 }
 
+/* =====================================================
+   IMAGE DRESS CODE
+===================================================== */
+
+.dress-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.dress-image img {
+  max-width: 320px;   /* taille élégante sur desktop */
+  width: 100%;
+  height: auto;
+}
+
 
 
 
