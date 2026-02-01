@@ -199,10 +199,11 @@ nav a:hover {
 }
 
 .dress-image img {
-  max-width: 100px;   /* taille élégante sur desktop */
+  max-width: 200px;   /* taille élégante sur desktop */
   width: 100%;
   height: auto;
 }
+
 
 
 
