@@ -333,6 +333,14 @@ margin-bottom: 8px;
 }
 
 
+.simple-page {
+  max-width: 800px;
+  margin: 0 auto;       /* 🔑 centre horizontalement */
+  padding: 60px 20px;
+  text-align: center;   /* 🔑 centre le texte */
+}
+
+
 
 
 
