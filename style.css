@@ -370,6 +370,27 @@ margin-bottom: 8px;
 }
 
 
+@media (max-width: 600px) {
+
+  .main-nav {
+    gap: 4px;            /* réduit l’espace vertical entre lignes */
+  }
+
+  .nav-links {
+    gap: 10px;           /* réduit l’espace entre les liens */
+  }
+
+  .nav-links a {
+    font-size: 12px;     /* texte un peu plus petit */
+    letter-spacing: 1.5px;
+  }
+
+  .lang-switch {
+    font-size: 12px;
+    margin-top: 2px;     /* rapproche FR / EN du menu */
+  }
+
+}
 
 
 
