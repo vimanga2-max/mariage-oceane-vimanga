@@ -344,13 +344,19 @@ margin-bottom: 8px;
 
 .main-nav {
   display: flex;
-  justify-content: center;   /* centre tout */
+  flex-direction: column;   /* empile les lignes */
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
-.main-nav a {
+.nav-links a {
   text-decoration: none;
   color: #2b2b2b;
   font-size: 13px;
@@ -359,9 +365,10 @@ margin-bottom: 8px;
 }
 
 .lang-switch {
-  margin-left: 20px; /* petit espace élégant */
   font-style: italic;
+  font-size: 13px;
 }
+
 
 
 
