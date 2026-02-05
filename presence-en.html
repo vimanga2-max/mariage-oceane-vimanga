@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP – Oceane & Vimanga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-presence">
+
+<header class="topbar">
+  <div class="logo">Oceane & Vimanga</div>
+  <nav>
+    <a href="index-en.html">Wedding</a>
+    <a href="presence-en.html">RSVP</a>
+    <a href="cadeaux-en.html">Gifts</a>
+    <a href="presence.html" class="lang">FR</a> / <a href="presence-en.html" class="lang">EN</a>
+  </nav>
+</header>
+
+<main class="page-wrapper">
+
+  <!-- SCHEDULE (SAME AS INDEX) -->
+  <section class="invitation-new">
+    <div class="events cache">
+
+      <p class="intro">
+        <br><br><br><br>
+        We are delighted to invite you to our Wedding
+      </p>
+
+      <h2 class="date">MAY 30, 2026</h2>
+
+      <section class="events">
+        <div class="event">
+          <h3>CIVIL CEREMONY</h3>
+          <p>
+            Rouen City Hall<br>
+            – 1:30 PM –
+          </p>
+        </div>
+
+        <div class="event">
+          <h3>GARDEN PARTY</h3>
+          <p>
+            Château de Hautot<br>
+            sur Seine<br>
+            – 3:30 PM –
+          </p>
+        </div>
+
+        <div class="event">
+          <h3>VOW EXCHANGE</h3>
+          <p>
+            Château de Hautot<br>
+            sur Seine<br>
+            – 5:30 PM –
+          </p>
+        </div>
+
+        <div class="event">
+          <h3>DINNER</h3>
+          <p>
+            Château de Hautot<br>
+            sur Seine<br>
+            – 8:00 PM –
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- RSVP FORM -->
+  <section class="simple-page">
+
+    <h1>Will you be there?</h1>
+
+    <p class="form-intro">
+      To confirm your attendance at our wedding,  
+      please fill in this form 🤍
+    </p>
+
+    <form class="rsvp-form"
+          name="rsvp"
+          method="POST"
+          data-netlify="true"
+          action="/merci.html">
+
+      <input type="hidden" name="form-name" value="rsvp">
+
+      <input type="text" name="first_name" placeholder="First name" required>
+      <input type="text" name="last_name" placeholder="Last name" required>
+
+      <input type="number"
+             name="number_of_guests"
+             placeholder="Number of guests"
+             min="1"
+             required>
+
+      <select name="event" required>
+        <option value="">I will attend from…</option>
+        <option>Civil ceremony – 1:30 PM</option>
+        <option>Garden party – 3:30 PM</option>
+        <option>Vow exchange – 5:30 PM</option>
+        <option>Dinner – 8:00 PM</option>
+        <option>Unfortunately, I won’t be able to attend</option>
+      </select>
+
+      <textarea name="message" placeholder="Message (optional)"></textarea>
+
+      <button type="submit">Confirm my attendance</button>
+
+    </form>
+
+  </section>
+
+</main>
+
+</body>
+</html>
