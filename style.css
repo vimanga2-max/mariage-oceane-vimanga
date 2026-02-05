@@ -328,9 +328,11 @@ margin-bottom: 8px;
 
 
 
-<div class="events cache">
-  ...
-</div>
+.cache {
+  display: none;
+}
+
+
 
 
 
