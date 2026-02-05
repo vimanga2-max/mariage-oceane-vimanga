@@ -271,6 +271,56 @@ margin-bottom: 8px;
 }
 
 
+/* =====================================================
+   FORMULAIRE RSVP — ERGONOMIQUE
+===================================================== */
+
+.rsvp-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: "Georgia", serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.rsvp-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.rsvp-form button {
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #c58b9f;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.rsvp-form button:hover {
+  background-color: #b5798f;
+}
+
+.form-intro {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 
 
 
