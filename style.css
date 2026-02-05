@@ -102,8 +102,8 @@ nav a:hover {
 .events {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 60px;
-  margin-bottom: 50px;
+  gap: 40px;
+  margin-bottom: 100px;
 }
 
 .event h3 {
@@ -204,6 +204,7 @@ nav a:hover {
   width: 100%;
   height: auto;
 }
+
 
 
 
