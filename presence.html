@@ -21,18 +21,20 @@
   </nav>
 </header>
 
-<main class="simple-page presence-page">
+<main class="page-wrapper">
 
-  <p class="intro">
-    Nous sommes heureux de vous inviter à notre Mariage
-  </p>
+  <!-- PLANNING (IDENTIQUE À L'INDEX) -->
+  <section class="invitation-new">
 
-  <h2 class="date">LE 30 MAI 2026</h2>
+    <p class="intro">
+      Nous sommes heureux de vous inviter à notre Mariage
+    </p>
+
+    <h2 class="date">LE 30 MAI 2026</h2>
 
     <section class="events">
       <div class="event">
         <h3>MARIAGE CIVIL</h3>
-        
         <p>
           Mairie de Rouen<br>
           – à 13 heures 30 –
@@ -42,7 +44,7 @@
       <div class="event">
         <h3>GARDEN PARTY</h3>
         <p>
-          Château de Hautot<br> 
+          Château de Hautot<br>
           sur Seine<br>
           – à 15 heures 30 –
         </p>
@@ -51,7 +53,7 @@
       <div class="event">
         <h3>ÉCHANGE DES VŒUX</h3>
         <p>
-          Château de Hautot<br> 
+          Château de Hautot<br>
           sur Seine<br>
           – à 17 heures 30 –
         </p>
@@ -60,16 +62,17 @@
       <div class="event">
         <h3>DÎNER</h3>
         <p>
-          
-          Château de Hautot <br>
+          Château de Hautot<br>
           sur Seine<br>
           – à 20 heures –
         </p>
       </div>
     </section>
 
-  <!-- FORMULAIRE À DROITE -->
-  <div class="presence-form">
+  </section>
+
+  <!-- FORMULAIRE -->
+  <section class="simple-page">
 
     <h1>Tu seras là ?</h1>
 
@@ -95,15 +98,14 @@
         name="nombre_personnes"
         placeholder="Nombre de personnes"
         min="1"
-        step="1"
         required
       >
 
       <select name="evenement" required>
         <option value="">Je serai présent(e) à partir de…</option>
-        <option>Mariage civil – 13h30 – Mairie de Rouen</option>
-        <option>Garden party – 15h30 – Château de Hautot-sur-Seine</option>
-        <option>Échange des vœux – 17h30 – Château de Hautot-sur-Seine</option>
+        <option>Mariage civil – 13h30</option>
+        <option>Garden party – 15h30</option>
+        <option>Échange des vœux – 17h30</option>
         <option>Dîner – 20h00</option>
         <option>Je ne peux malheureusement pas venir</option>
       </select>
@@ -114,12 +116,13 @@
 
     </form>
 
-  </div>
+  </section>
 
 </main>
 
 </body>
 </html>
+
 
 
 
