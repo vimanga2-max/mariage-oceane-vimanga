@@ -116,6 +116,7 @@ nav a:hover {
 .event p {
   font-size: 15px;
   line-height: 1.8;
+  min-height: 70px; 
 }
 
 /* =====================================================
@@ -203,6 +204,7 @@ nav a:hover {
   width: 100%;
   height: auto;
 }
+
 
 
 
