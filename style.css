@@ -1,4 +1,211 @@
 
+/* =====================================================
+   BASE GLOBALE
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: #f5f0ea;
+  color: #2b2b2b;
+}
+
+/* Conteneur central réutilisable */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =====================================================
+   BARRE DU HAUT
+===================================================== */
+
+.topbar {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 22px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2b2b2b;
+  margin: 0 12px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.lang {
+  font-style: italic;
+}
+
+/* =====================================================
+   BANDEAUX (HAUT & BAS)
+===================================================== */
+
+.bandeau {
+  width: 100%;
+  background-color: #f5f0ea;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bandeau img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   PAGE INDEX — INVITATION
+===================================================== */
+
+.invitation-new {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+  text-align: center;
+}
+
+.invitation-new .intro {
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+.invitation-new .date {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+/* =====================================================
+   ÉVÉNEMENTS
+===================================================== */
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.event h3 {
+  color: #c58b9f;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.event p {
+  font-size: 15px;
+  line-height: 1.8;
+  min-height: 70px; 
+}
+
+/* =====================================================
+   RSVP
+===================================================== */
+
+.rsvp {
+  display: inline-block;
+  margin: 30px 0 50px;
+  color: #c58b9f;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.rsvp:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   SECTIONS SIMPLES (présence / cadeaux)
+===================================================== */
+
+.simple-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.simple-page h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.simple-page p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .events {
+    grid-template-columns: 1fr;
+  }
+
+  .invitation-new {
+    padding: 30px 15px 50px;
+  }
+
+  .invitation-new .date {
+    font-size: 22px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+    font-size: 11px;
+  }
+}
+
+/* =====================================================
+   IMAGE DRESS CODE
+===================================================== */
+
+.dress-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.dress-image img {
+  max-width: 320px;   /* taille élégante sur desktop */
+  width: 100%;
+  height: auto;
+}
+
 
 
 
