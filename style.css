@@ -64,6 +64,7 @@ nav a:hover {
   background-color: #f5f0ea;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .bandeau img {
@@ -72,6 +73,8 @@ nav a:hover {
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-bottom: 0;
+   
 }
 
 /* =====================================================
@@ -81,13 +84,14 @@ nav a:hover {
 .invitation-new {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px 20px 60px;
+  padding: 5px 20px 60px;
   text-align: center;
 }
 
 .invitation-new .intro {
   font-style: italic;
   margin-bottom: 18px;
+  margin-top: -10px;
 }
 
 .invitation-new .date {
@@ -206,6 +210,12 @@ nav a:hover {
   height: auto;
 }
 
+@media (max-width: 600px) {
+  .dress-image img {
+    max-width: 90%;
+  }
+}
+
 
 .highlight {
 color: #c58b9f;
@@ -213,6 +223,7 @@ font-size: 15px;
 letter-spacing: 2px;
 margin-bottom: 8px;
 }
+
 
 
 
