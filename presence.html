@@ -69,59 +69,55 @@
       </div>
     </section>
 
-  </section>
+<section class="simple-page">
 
-  <!-- FORMULAIRE -->
-  <section class="simple-page">
+  <h1>Tu seras là ?</h1>
 
-    <h1>Tu seras là ?</h1>
+  <p class="form-intro">
+    Pour confirmer ta présence à notre mariage,  
+    merci de remplir ce formulaire 🤍
+  </p>
 
-    <p>
-      Pour confirmer ta présence à notre mariage,  
-      merci de remplir ce formulaire 🤍
-    </p>
+  <form class="rsvp-form"
+        name="rsvp"
+        method="POST"
+        data-netlify="true"
+        action="/merci.html">
 
-    <form
-      name="rsvp"
-      method="POST"
-      data-netlify="true"
-      action="/merci.html"
-    >
+    <input type="hidden" name="form-name" value="rsvp">
 
-      <input type="hidden" name="form-name" value="rsvp">
+    <input type="text" name="prenom" placeholder="Prénom" required>
+    <input type="text" name="nom" placeholder="Nom" required>
 
-      <input type="text" name="prenom" placeholder="Prénom" required><br>
-      <input type="text" name="nom" placeholder="Nom" required>
+    <input type="number"
+           name="nombre_personnes"
+           placeholder="Nombre de personnes"
+           min="1"
+           required>
 
-      <input
-        type="number"
-        name="nombre_personnes"
-        placeholder="Nombre de personnes"
-        min="1"
-        required
-      >
+    <select name="evenement" required>
+      <option value="">Je serai présent(e) à partir de…</option>
+      <option>Mariage civil – 13h30</option>
+      <option>Garden party – 15h30</option>
+      <option>Échange des vœux – 17h30</option>
+      <option>Dîner – 20h00</option>
+      <option>Je ne peux malheureusement pas venir</option>
+    </select>
 
-      <select name="evenement" required>
-        <option value="">Je serai présent(e) à partir de…</option>
-        <option>Mariage civil – 13h30</option>
-        <option>Garden party – 15h30</option>
-        <option>Échange des vœux – 17h30</option>
-        <option>Dîner – 20h00</option>
-        <option>Je ne peux malheureusement pas venir</option>
-      </select>
+    <textarea name="message" placeholder="Message (optionnel)"></textarea>
 
-      <textarea name="message" placeholder="Message (optionnel)"></textarea>
+    <button type="submit">Confirmer ma présence</button>
 
-      <button type="submit">Confirmer ma présence</button>
+  </form>
 
-    </form>
+</section>
 
-  </section>
 
 </main>
 
 </body>
 </html>
+
 
 
 
