@@ -270,6 +270,11 @@ margin-bottom: 8px;
   }
 }
 
+.presence-form h1,
+.simple-page h1 {
+  margin-top: 10px;     /* ⬅️ réduit l’espace au-dessus */
+  margin-bottom: 15px; /* espace propre en dessous */
+}
 
 /* =====================================================
    FORMULAIRE RSVP — ERGONOMIQUE
