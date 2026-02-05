@@ -108,7 +108,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .event h3 {
@@ -325,6 +325,7 @@ margin-bottom: 8px;
   font-size: 15px;
   line-height: 1.6;
 }
+
 
 
 
